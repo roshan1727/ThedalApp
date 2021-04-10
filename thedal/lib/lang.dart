@@ -35,7 +35,8 @@ class _LanguageState extends State<Language> {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Colors.transparent,
-                          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                         ),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         onPressed: () {
@@ -45,28 +46,22 @@ class _LanguageState extends State<Language> {
                         },
                         child: Card(
                           child: Container(
-                            decoration: BoxDecoration(
-                                gradient: LinearGradient(colors: [
-                              Color.fromRGBO(252, 92, 125, 1),
-                              Color.fromRGBO(106, 130, 251, 1),
-                            ])),
-                            width: 200,
-                            height: 100,
-                            alignment: Alignment.center,
-                            child: Text(
-                              "தமிழ்",
-                              style: TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [
+                                Color.fromRGBO(252, 92, 125, 1),
+                                Color.fromRGBO(106, 130, 251, 1),
+                              ])),
+                              width: 200,
+                              height: 100,
+                              alignment: Alignment.center,
+                              child: Image.asset("Asset/img/Tamil.png")),
                         ),
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Colors.transparent,
-                          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                         ),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         onPressed: () {
@@ -77,11 +72,10 @@ class _LanguageState extends State<Language> {
                         child: Card(
                           elevation: 5,
                           child: Container(
-                            width: 200,
-                            height: 100,
-                            alignment: Alignment.center,
-                            child: Text("ENGLISH"),
-                          ),
+                              width: 200,
+                              height: 100,
+                              alignment: Alignment.center,
+                              child: Image.asset("Asset/img/English.png")),
                         ),
                       ),
                     ],
@@ -93,11 +87,10 @@ class _LanguageState extends State<Language> {
                         child: Card(
                           elevation: 5,
                           child: Container(
-                            width: 200,
-                            height: 100,
-                            alignment: Alignment.center,
-                            child: Text("中文"),
-                          ),
+                              width: 200,
+                              height: 100,
+                              alignment: Alignment.center,
+                              child: Image.asset("Asset/img/japanese.png")),
                         ),
                       ),
                       GestureDetector(
@@ -107,7 +100,7 @@ class _LanguageState extends State<Language> {
                             width: 200,
                             height: 100,
                             alignment: Alignment.center,
-                            child: Text("日本語"),
+                            child: Image.asset("Asset/img/chinese.png"),
                           ),
                         ),
                       ),
@@ -120,11 +113,10 @@ class _LanguageState extends State<Language> {
                         child: Card(
                           elevation: 5,
                           child: Container(
-                            width: 200,
-                            height: 100,
-                            alignment: Alignment.center,
-                            child: Text("తెలుగు"),
-                          ),
+                              width: 200,
+                              height: 100,
+                              alignment: Alignment.center,
+                              child: Image.asset("Asset/img/Telungu.png")),
                         ),
                       ),
                     ],
@@ -137,8 +129,8 @@ class _LanguageState extends State<Language> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushReplacement(
-                        context, MaterialPageRoute(builder: (context) => Company()));
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => Company()));
                   },
                   child: Card(
                     clipBehavior: Clip.antiAliasWithSaveLayer,
